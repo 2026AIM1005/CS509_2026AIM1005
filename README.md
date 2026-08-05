@@ -1,8 +1,13 @@
 # Assignment 01
 
-This directory contains the implementation of **Assignment 01** for the **CS509 Laboratory** course.
+This repository contains the implementation of **Assignment 01** for the **CS509 Laboratory** course.
 
-The assignment includes the implementation of **General Matrix Multiplication (GEMM)** and **Compressed Sparse Row (CSR)** representation for graphs. The project is organized into separate directories for source code, driver program, test cases, and output files.
+The assignment includes the implementation of:
+
+- General Matrix Multiplication (GEMM)
+- Compressed Sparse Row (CSR) representation for graphs
+
+The project follows a modular structure with separate directories for source code, driver program, test cases, and output files.
 
 ---
 
@@ -34,22 +39,18 @@ Assignment_01
 
 # Implemented Tasks
 
-This assignment contains the following implementations:
-
 - General Matrix Multiplication (GEMM)
-- Compressed Sparse Row (CSR) representation for graphs
+- Compressed Sparse Row (CSR) Graph Representation
 
 ---
 
 # Project Organization
 
-The project follows a modular structure.
-
 ```
 Assignment_01/
 │
 ├── driver/        # Driver program
-├── src/           # Source and header files
+├── src/           # Source and Header files
 ├── tests/         # Input test files
 ├── output/        # Generated output files
 └── README.md
@@ -67,7 +68,7 @@ Compile the project using:
 g++ driver/main.cpp src/matrix.cpp src/csr.cpp -o assignment
 ```
 
-Run the executable using:
+Run the executable:
 
 ```bash
 ./assignment
@@ -77,7 +78,7 @@ Run the executable using:
 
 # Input Files
 
-The project uses the following input files:
+The project uses the following test files:
 
 - `gemm_test_01.txt`
 - `graph_test_01.txt`
@@ -86,31 +87,63 @@ The project uses the following input files:
 
 # Output
 
-The generated output is stored in the **output** directory.
+The generated results are stored inside the **output/** directory.
+
+Example output:
+
+```
+===== SIMPLE GEMM =====
+58 64
+139 154
+Execution Time : 0.0028 ms
+
+===== BLOCKING GEMM =====
+58 64
+139 154
+Execution Time : 0.0049 ms
+```
+
+---
+
+# GEMM Results
+
+## 9.1 GEMM Results Table
+
+| Test File | Input Type / Size | Expected Output | Actual Output | Simple Time | Blocking Time | Block Size | Status |
+|-----------|-------------------|-----------------|---------------|------------:|--------------:|-----------:|:------:|
+| gemm_test_01.txt | Matrix A (2 × 2), Matrix B (2 × 2) | `[[58, 64], [139, 154]]` | `[[58, 64], [139, 154]]` | **0.0028 ms** | **0.0049 ms** | 2 | ✅ Pass |
+
+### Performance Analysis
+
+- Both **Simple GEMM** and **Blocking GEMM** produced identical output matrices.
+- The computed result matched the expected matrix multiplication output.
+- For this small matrix size (2 × 2), the **Simple GEMM** implementation executed faster (**0.0028 ms**) than the **Blocking GEMM** implementation (**0.0049 ms**).
+- This behavior is expected because blocking introduces additional loop overhead, which only becomes beneficial for larger matrices where cache optimization significantly improves performance.
 
 ---
 
 # Technologies Used
 
-- **Programming Language:** C++
-- **Compiler:** GCC (g++)
-- **Platform:** Linux
+- Programming Language: **C++**
+- Compiler: **GCC (g++)**
+- Platform: **Linux**
 
 ---
 
 # Assignment Objectives
 
-This assignment focuses on implementing:
+This assignment focuses on:
 
 - Matrix Computations
+- Cache-Optimized Matrix Multiplication
 - Sparse Data Structures
-- Graph Representation using CSR
+- Graph Representation using Compressed Sparse Row (CSR)
 
 ---
 
 # Academic Information
 
-**student:** Avivardhan Kumar Singh
+**Student:** Avivardhan Kumar Singh
 
 **Course:** CS509 Laboratory
 
@@ -120,20 +153,6 @@ This assignment focuses on implementing:
 
 ---
 
-## Note
+# Note
 
-This assignment has been developed for academic and educational purposes as part of the CS509 Laboratory course.
-<!--
-**2026AIM1005/2026AIM1005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+This assignment has been developed for academic and educational purposes as part of the **CS509 Laboratory** course.
