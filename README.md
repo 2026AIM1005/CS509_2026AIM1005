@@ -1,10 +1,14 @@
-CS509 Laboratory Assignments
-This repository contains my individual laboratory assignments for the CS509 course as part of my M.Tech in Artificial Intelligence at Indian Institute of Technology (IIT) Ropar.
+# Assignment 01
 
-The repository serves as a centralized collection of all programming assignments completed during the course. Each assignment is organized into independent tasks with their own source code, drivers, test cases, outputs, and build configurations.
+This directory contains the implementation of **Assignment 01** for the **CS509 Laboratory** course.
 
-Directory Structure
+The assignment includes the implementation of **General Matrix Multiplication (GEMM)** and **Compressed Sparse Row (CSR)** representation for graphs. The project is organized into separate directories for source code, driver program, test cases, and output files.
 
+---
+
+# Directory Structure
+
+```
 Assignment_01
 │
 ├── driver
@@ -24,14 +28,24 @@ Assignment_01
 │   └── result.txt
 │
 └── README.md
+```
 
-- Implemented Tasks
+---
+
+# Implemented Tasks
+
 This assignment contains the following implementations:
+
 - General Matrix Multiplication (GEMM)
 - Compressed Sparse Row (CSR) representation for graphs
 
--Project Organization
+---
+
+# Project Organization
+
 The project follows a modular structure.
+
+```
 Assignment_01/
 │
 ├── driver/        # Driver program
@@ -39,12 +53,17 @@ Assignment_01/
 ├── tests/         # Input test files
 ├── output/        # Generated output files
 └── README.md
+```
 
--Build Instructions
+---
+
+# Build Instructions
+
 Navigate to the Assignment_01 directory.
 
--Compile the project using:
-bash
+Compile the project using:
+
+```bash
 g++ driver/main.cpp src/matrix.cpp src/csr.cpp -o assignment
 ```
 
@@ -69,25 +88,39 @@ The project uses the following input files:
 
 The generated output is stored in the **output** directory.
 
--Technologies Used
-- Programming Language: C++
-- Compiler: GCC (g++)
-- Platform: Linux
+---
 
-- Assignment Objectives
+# Technologies Used
+
+- **Programming Language:** C++
+- **Compiler:** GCC (g++)
+- **Platform:** Linux
+
+---
+
+# Assignment Objectives
+
 This assignment focuses on implementing:
+
 - Matrix Computations
 - Sparse Data Structures
 - Graph Representation using CSR
 
-- Academic Information
-Course: CS509 Laboratory
-Programme: M.Tech in Artificial Intelligence
-Institute: Indian Institute of Technology (IIT) Ropar
+---
 
-Note:
+# Academic Information
+
+**Course:** CS509 Laboratory
+
+**Programme:** M.Tech in Computer Science and Engineering
+
+**Institute:** Indian Institute of Technology (IIT) Ropar
+
+---
+
+## Note
+
 This assignment has been developed for academic and educational purposes as part of the CS509 Laboratory course.
-
 <!--
 **2026AIM1005/2026AIM1005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
