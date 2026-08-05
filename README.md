@@ -110,9 +110,11 @@ This assignment focuses on implementing:
 
 # Academic Information
 
+**student:** Avivardhan Kumar Singh
+
 **Course:** CS509 Laboratory
 
-**Programme:** M.Tech in Computer Science and Engineering
+**Programme:** M.Tech in Artificial Intelligence
 
 **Institute:** Indian Institute of Technology (IIT) Ropar
 
