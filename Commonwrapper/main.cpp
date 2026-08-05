@@ -7,9 +7,9 @@ int main()
 {
     int choice;
 
-    cout << "==========================" << endl;
-    cout << "     COMMON WRAPPER" << endl;
-    cout << "==========================" << endl;
+    cout << "-" << endl;
+    cout << "COMMON WRAPPER" << endl;
+    cout << "-" << endl;
     cout << "1. GEMM" << endl;
     cout << "2. CSR" << endl;
     cout << "0. Exit" << endl;
