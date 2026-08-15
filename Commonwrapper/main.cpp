@@ -3,40 +3,46 @@
 
 using namespace std;
 
+void showMenu()
+{
+    cout << "\n========================================\n";
+    cout << "       COMMON ASSIGNMENT WRAPPER\n";
+    cout << "========================================\n";
+    cout << "1. Assignment 01\n";
+    cout << "2. Assignment 02\n";
+    cout << "3. Exit\n";
+    cout << "========================================\n";
+}
+
 int main()
 {
     int choice;
 
-    cout << "-" << endl;
-    cout << "COMMON WRAPPER" << endl;
-    cout << "-" << endl;
-    cout << "1. GEMM" << endl;
-    cout << "2. CSR" << endl;
-    cout << "0. Exit" << endl;
-    cout << "\nEnter your choice: ";
-
-    cin >> choice;
-
-    switch (choice)
+    while (true)
     {
-    case 1:
-        cout << "\nRunning GEMM...\n\n";
-        system("..\\Assignment_01\\main.exe gemm ..\\Assignment_01\\tests\\gemm_test_01.txt ..\\Assignment_01\\output\\result.txt");
-        system("type ..\\Assignment_01\\output\\result.txt");
-        break;
+        showMenu();
 
-    case 2:
-        cout << "\nRunning CSR...\n\n";
-        system("..\\Assignment_01\\main.exe csr ..\\Assignment_01\\tests\\graph_test_01.txt ..\\Assignment_01\\output\\result.txt");
-        system("type ..\\Assignment_01\\output\\result.txt");
-        break;
+        cout << "Enter your choice: ";
+        cin >> choice;
 
-    case 0:
-        cout << "\nExiting...\n";
-        break;
+        switch (choice)
+        {
+       case 1:
+       cout << "\nRunning Assignment 01...\n";
+       system("cd ../Assignment_01 && common_wrapper.exe");
+       break;
 
-    default:
-        cout << "\nInvalid Choice!\n";
+       case 2:
+       cout << "\nRunning Assignment 02...\n";
+       system("cd ../Assignment_02 && common_wrapper.exe");
+       break;
+        case 3:
+            cout << "\nExiting wrapper...\n";
+            return 0;
+
+        default:
+            cout << "\nInvalid choice. Please try again.\n";
+        }
     }
 
     return 0;
