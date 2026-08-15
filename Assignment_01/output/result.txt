@@ -1,9 +1,9 @@
 ===== SIMPLE GEMM =====
 58 64 
 139 154 
-Execution Time : 0.0045 ms
+Execution Time : 0.005 ms
 
 ===== BLOCKING GEMM =====
 58 64 
 139 154 
-Execution Time : 0.0195 ms
+Execution Time : 0.0067 ms
