@@ -12,6 +12,7 @@ int main()
     cout << "----------------------------------------" << endl;
     cout << "1. Assignment 01" << endl;
     cout << "2. Assignment 02" << endl;
+    cout << "3. Assignment 03" << endl;
     cout << "0. Exit" << endl;
     cout << "\nEnter your choice: ";
 
@@ -27,6 +28,11 @@ int main()
     case 2:
         cout << "\nOpening Assignment 02...\n\n";
         system("..\\Assignment_02\\common_wrapper.exe");
+        break;
+
+    case 3:
+        cout << "\nOpening Assignment 03...\n\n";
+        system("..\\Assignment_03\\common_wrapper.exe");
         break;
 
     case 0:
