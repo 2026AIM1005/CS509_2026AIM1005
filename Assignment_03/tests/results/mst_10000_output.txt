@@ -1,0 +1,14 @@
+=== mst_10000 ===
+Input file: tests/mst_inputs/mst_10000.txt
+V = 10000, E = 30000
+
+Algorithm: Kruskal's MST
+MST edges: (V=10000 exceeds print threshold of 500; 9999 edges selected, listing omitted)
+Total MST weight: 1951657
+Execution time: 2.2219 ms
+
+Algorithm: Prim's MST
+MST edges: (V=10000 exceeds print threshold of 500; 9999 edges selected, listing omitted)
+Total MST weight: 1951657
+Execution time: 7.8710 ms
+

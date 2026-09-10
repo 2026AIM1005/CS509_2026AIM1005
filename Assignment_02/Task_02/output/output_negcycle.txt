@@ -1,0 +1,3 @@
+Algorithm: Floyd-Warshall
+Negative cycle: true
+Execution time: 0.001126 ms

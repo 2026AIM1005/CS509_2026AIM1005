@@ -1,0 +1,4 @@
+Algorithm: Bellman-Ford
+Source: 0
+Negative cycle: true
+Execution time: 0.00027 ms
